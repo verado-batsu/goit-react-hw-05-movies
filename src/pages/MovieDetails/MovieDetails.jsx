@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { Suspense, useRef, useState } from 'react';
 import {
     Link,
     Outlet,
@@ -19,7 +19,8 @@ export default function MovieDetails() {
     const navigate = useNavigate();
 
     function handleClick() {
-        navigate(location.current.state.from);
+        const prevLocation = location.current?.state?.from ?? '/movies';
+        navigate(prevLocation);
     }
 
     const { poster_path, title, genres, vote_average, overview } = movie;
@@ -67,7 +68,9 @@ export default function MovieDetails() {
                     </li>
                 </ul>
             </section>
-            <Outlet />
+            <Suspense fallback={<div>Loading...</div>}>
+                <Outlet />
+            </Suspense>
         </DetailsContainer>
     );
 }
