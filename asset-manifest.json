@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.807f70a6.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.0cba425e.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.dbeafe25.js",
+    "static/js/304.98ff324b.chunk.js": "/goit-react-hw-05-movies/static/js/304.98ff324b.chunk.js",
+    "static/js/278.cd576cbe.chunk.js": "/goit-react-hw-05-movies/static/js/278.cd576cbe.chunk.js",
+    "static/js/33.b8127457.chunk.js": "/goit-react-hw-05-movies/static/js/33.b8127457.chunk.js",
+    "static/js/387.ad5a2f23.chunk.js": "/goit-react-hw-05-movies/static/js/387.ad5a2f23.chunk.js",
+    "static/js/779.e02576af.chunk.js": "/goit-react-hw-05-movies/static/js/779.e02576af.chunk.js",
+    "static/js/216.c785b952.chunk.js": "/goit-react-hw-05-movies/static/js/216.c785b952.chunk.js",
+    "static/js/279.57b949a0.chunk.js": "/goit-react-hw-05-movies/static/js/279.57b949a0.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.807f70a6.css.map": "/goit-react-hw-05-movies/static/css/main.807f70a6.css.map",
-    "main.0cba425e.js.map": "/goit-react-hw-05-movies/static/js/main.0cba425e.js.map"
+    "main.dbeafe25.js.map": "/goit-react-hw-05-movies/static/js/main.dbeafe25.js.map",
+    "304.98ff324b.chunk.js.map": "/goit-react-hw-05-movies/static/js/304.98ff324b.chunk.js.map",
+    "278.cd576cbe.chunk.js.map": "/goit-react-hw-05-movies/static/js/278.cd576cbe.chunk.js.map",
+    "33.b8127457.chunk.js.map": "/goit-react-hw-05-movies/static/js/33.b8127457.chunk.js.map",
+    "387.ad5a2f23.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.ad5a2f23.chunk.js.map",
+    "779.e02576af.chunk.js.map": "/goit-react-hw-05-movies/static/js/779.e02576af.chunk.js.map",
+    "216.c785b952.chunk.js.map": "/goit-react-hw-05-movies/static/js/216.c785b952.chunk.js.map",
+    "279.57b949a0.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.57b949a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.807f70a6.css",
-    "static/js/main.0cba425e.js"
+    "static/js/main.dbeafe25.js"
   ]
 }
