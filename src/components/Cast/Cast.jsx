@@ -12,8 +12,6 @@ export default function Cast() {
         getMovieCredits(movieId).then(data => setCast(data));
     }, [movieId]);
 
-    console.log(cast);
-
     return (
         <CastContainer>
             <ul>

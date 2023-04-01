@@ -1,5 +1,11 @@
-import { useState } from 'react';
-import { Link, Outlet, useParams } from 'react-router-dom';
+import { useRef, useState } from 'react';
+import {
+    Link,
+    Outlet,
+    useLocation,
+    useNavigate,
+    useParams,
+} from 'react-router-dom';
 
 import { getMovieDetails } from 'services/movieAPI';
 import { DetailsContainer } from './MovieDetails.styled';
@@ -9,6 +15,12 @@ export default function MovieDetails() {
     const [movie, setMovie] = useState(() =>
         getMovieDetails(movieId).then(data => setMovie(data))
     );
+    const location = useRef(useLocation());
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate(location.current.state.from);
+    }
 
     const { poster_path, title, genres, vote_average, overview } = movie;
     const imageSrc = poster_path
@@ -18,7 +30,9 @@ export default function MovieDetails() {
 
     return (
         <DetailsContainer>
-            <button>Go Back</button>
+            <button type="button" onClick={handleClick}>
+                Go Back
+            </button>
             <section className="movie-info">
                 <img src={imageSrc} alt={title} />
                 <div className="main-info">
@@ -52,8 +66,8 @@ export default function MovieDetails() {
                         <Link to="reviews">Reviews</Link>
                     </li>
                 </ul>
-                <Outlet />
             </section>
+            <Outlet />
         </DetailsContainer>
     );
 }

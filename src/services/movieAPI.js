@@ -36,5 +36,15 @@ export async function getMovieCredits(id) {
 	} catch (error) {
 		console.log(error);
 	}
-	
+}
+
+export async function getMovieReviews(id) {
+	const urlReviews = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`
+	try {
+		const response = await axios.get(urlReviews);
+		const reviews = response.data.results;
+		return reviews;
+	} catch (error) {
+		console.log(error);
+	}
 }

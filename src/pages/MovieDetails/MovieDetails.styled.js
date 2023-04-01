@@ -24,19 +24,16 @@ export const DetailsContainer = styled.div`
 		
 	}
 	.additional-info{
-		
 		h3{
 			margin-bottom:10px
 		}
-
-		ul{
-			margin-bottom: 10px;
-			padding: 10px 0;
-			border-bottom: 1px solid black;
-		}
-		
 		li:not(:last-child) {
 			margin-bottom: 5px
 		}
+	}
+	.additional-info > ul{
+		margin-bottom: 10px;
+		padding: 10px 0;
+		border-bottom: 1px solid black;
 	}
 `;
